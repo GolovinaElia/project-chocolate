@@ -16,6 +16,10 @@
   padding: 32px 52px 32px 53px;
 }
 
+.products-wrap {
+  text-align: center;
+}
+
 .products-title {
   font-family: var(--semibold__font);
   font-size: 18px;
@@ -43,13 +47,26 @@
   border-radius: 100px;
 }
 
+.wrap-slider {
+  width: 100%;
+  height: 364px;
+}
+
 @media screen and (min-width: 375px) {
   .products-item {
     width: 335px;
     height: 364px;
   }
+
+  .wrap-slider {
+    width: 335px;
+    height: 364px;
+  }
 }
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 768px) {
+  .wrap-slider {
+    width: 1136px;
+    height: 364px;
+  }
+}

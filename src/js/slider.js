@@ -1,13 +1,21 @@
 var swiper = new Swiper('.mySwiper', {
   loop: true,
   autoplay: {
-    delay: 200,
+    delay: 2000,
   },
   keyboard: {
     enabled: true,
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  breakpoints: {
+    
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 18
+    },
+
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18
+    },
+  }
 });
