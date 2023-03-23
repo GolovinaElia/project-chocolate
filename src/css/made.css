@@ -1,0 +1,134 @@
+.made {
+  padding: 72px 0;
+  background-color: var(--made-border);
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.iframe {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: content-box;
+  background-image: url("../img/made-desc1x.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.made-chocolate {
+  background-color: var(--white__color);
+  padding: 20px 14px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.made-title {
+  font-family: var(--semibold__font);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.made-text {
+  display: flex;
+  align-items: baseline;
+}
+
+.made-text:before {
+  content: "";
+  min-width: 8px;
+  height: 8px;
+  background: var(--made__before);
+  border: 1px solid var(--made-border);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 375px) {
+  .iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .made-title {
+    width: 307px;
+  }
+
+  .made-list {
+    width: 307px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .iframe {
+    width: 614px;
+    height: 400px;
+  }
+
+  .made-chocolate {
+    width: 614px;
+    padding: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .made-title {
+    width: 338px;
+    margin-bottom: 28px;
+  }
+
+  .made-list {
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .video {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made-box {
+    display: flex;
+    gap: 20px;
+  }
+
+  .video {
+    height: 400px;
+  }
+
+  .iframe {
+    width: 600px;
+    height: 400px;
+  }
+
+  .made-chocolate {
+    margin: 0;
+    width: 516px;
+    height: 400px;
+    padding: 32px 32px 94px 32px;
+  }
+
+  .made-list {
+    width: 452px;
+  }
+}

@@ -1,4 +1,96 @@
-/* Reset styles */
+:root {
+  --main__text__color: #111111;
+  --secondary__text__color: #1E1823;
+  --accent__text__color: #FD9222;
+  --hover__button: #FCF1E0;
+  --body-color: #E2E2E2;
+  --white__color: #ffffff;
+  --made__before: #4C4C4C;
+  --made-border: #ECEDED;
+  --border__color: rgba(255, 255, 255, .5);
+  --advantages-color: rgba(255, 255, 255, 0.7);
+  --products-border: rgba(17, 17, 17, 0.1);
+  --products-button: rgba(250, 250, 250, 1);
+  --regular__font: "Montserrat Regular", sans-serif;
+  --medium__font: "Montserrat Medium", sans-serif;
+  --semibold__font: "Montserrat Semibold", sans-serif;
+  --bold__font: "Montserrat Bold", sans-serif;
+  --bolditalic__font: "Montserrat BoldItalic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat BoldItalic";
+  src: url("../fonts/Montserrat-BoldItalic.ttf") format("truetype");
+}
+
+body {
+  color: var(--main__text__color);
+  font-family: var(--regular__font);
+  background: var(--made-border);
+  font-size: 14px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -7,29 +99,36 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
   padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.title-current {
+  color: var(--accent__text__color);
 }
