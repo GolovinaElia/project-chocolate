@@ -103,6 +103,13 @@
   border-radius: 35px;
   border: none;
   cursor: pointer;
+  transition: background-color, color 250ms linear;
+}
+
+.btn-hover:hover,
+.btn-hover:focus {
+  background-color: var(--hover__button);
+  color: var(--accent__text__color);
 }
 
 .btn-benefits {
@@ -116,6 +123,13 @@
   cursor: pointer;
   margin-left: 6px;
   margin-bottom: 14px;
+  transition: background-color, color 250ms linear;
+}
+
+.btn-benefits:hover,
+.btn-benefits:focus {
+  background-color: var(--accent__text__color);
+  color: var(--white__color);
 }
 
 .hover-text {
