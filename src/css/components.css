@@ -1,3 +1,7 @@
+.components-title {
+  margin-bottom: 24px;
+}
+
 .components-text {
   text-align: center;
   letter-spacing: -0.02em;
@@ -145,9 +149,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .title {
+  .components-title {
+    margin-bottom: 28px;
     width: 411px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .components-text {

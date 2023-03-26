@@ -1,9 +1,8 @@
 .made {
   padding: 72px 0;
-  background-color: var(--made-border);
 }
 
-.title {
+.made-title {
   margin-bottom: 32px;
 }
 
@@ -27,7 +26,7 @@
   margin-top: 20px;
 }
 
-.made-title {
+.made-description {
   font-family: var(--semibold__font);
   font-weight: 600;
   font-size: 18px;
@@ -64,7 +63,7 @@
     height: 500px;
   }
 
-  .made-title {
+  .made-description {
     width: 307px;
   }
 
@@ -74,7 +73,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .title {
+  .made {
+    padding: 100px 0;
+  }
+
+  .made-title {
     margin-bottom: 50px;
   }
 
@@ -90,7 +93,7 @@
     margin-right: auto;
   }
 
-  .made-title {
+  .made-description {
     width: 338px;
     margin-bottom: 28px;
   }
@@ -107,6 +110,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .made {
+    padding: 128px 0;
+  }
+
   .made-box {
     display: flex;
     gap: 20px;
