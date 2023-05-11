@@ -50,15 +50,25 @@
   border: none;
 }
 
-.icon-twitter {
+.header-social-link {
+  display: block;
   stroke: var(--main__text__color);
   fill: transparent;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-twitter:hover,
-.icon-twitter:focus {
-  color: var(--accent__text__color);
+.header-social-link:hover,
+.header-social-link:focus {
+  stroke: var(--accent__text__color);
+}
+
+.header-social-link-inst {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-social-link-inst:hover,
+.header-social-link-inst:focus {
+  fill: var(--accent__text__color);
 }
 
 @media screen and (min-width: 768px) {
