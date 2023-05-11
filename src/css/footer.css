@@ -50,14 +50,27 @@
   color: var(--white__color);
 }
 
-.footer-icon {
+.footer-icon-link-inst {
+  display: block;
   fill: var(--white__color);
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon:hover,
-.footer-icon:focus {
+.footer-icon-link-inst:hover,
+.footer-icon-link-inst:focus {
   fill: var(--accent__text__color);
+}
+
+.footer-icon-link {
+  display: block;
+  stroke: var(--white__color);
+  fill: transparent;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  stroke: var(--accent__text__color);
 }
 
 .footer-line {
