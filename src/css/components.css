@@ -22,7 +22,7 @@
   border: 1px solid var(--accent__text__color);
   border-radius: 15px;
   position: relative;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 
 .components-box {
@@ -82,7 +82,7 @@
   cursor: pointer;
   border-radius: 15px;
   transform: translate(-50px, -100px);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 
 .hover-title {
@@ -103,7 +103,7 @@
   border-radius: 35px;
   border: none;
   cursor: pointer;
-  transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color color var(--transition);
 }
 
 .btn-hover:hover,
@@ -123,7 +123,7 @@
   cursor: pointer;
   margin-left: 6px;
   margin-bottom: 14px;
-  transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color color var(--transition);
 }
 
 .btn-benefits:hover,

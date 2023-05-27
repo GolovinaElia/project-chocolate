@@ -53,7 +53,7 @@
 .footer-icon-link-inst {
   display: block;
   fill: var(--white__color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 }
 
 .footer-icon-link-inst:hover,
@@ -65,7 +65,7 @@
   display: block;
   stroke: var(--white__color);
   fill: transparent;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke var(--transition);
 }
 
 .footer-icon-link:hover,
@@ -90,7 +90,7 @@
   letter-spacing: -0.02em;
   line-height: 1.14;
   color: var(--white__color);
-  transition: color 250ms linear;
+  transition: color var(--transition);
 }
 
 .footer-link-nav:hover,
